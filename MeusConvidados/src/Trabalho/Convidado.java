@@ -1,14 +1,22 @@
 package Trabalho;
 
 public class Convidado {
-	private String nome;
-	private String telefone;
-	private String email;
-	private int quantAcompanhante;
+	private String nome; //Nome do convidado
+	private String telefone; //Telefone
+	private String email; //email
+	private int quantAcompanhante; //quantidade de acompanhantes
 	
+	//sobrecarga do método
 	public Convidado(String nom, int quant) {
 		nome = nom;
 		quantAcompanhante = quant;
+	}
+	
+	public Convidado(String nom, int quant, String telefone, String email) {
+		nome = nom;
+		quantAcompanhante = quant;
+		this.telefone = telefone;
+		this.email = email;
 	}
 	
 	public String toString() {

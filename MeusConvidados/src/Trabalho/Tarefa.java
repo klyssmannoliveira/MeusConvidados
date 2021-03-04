@@ -5,18 +5,18 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Tarefa {
-	private String descricao;
-	private Date dataLimite;
-	private long prazo;
-	private boolean concluido;
+	private String descricao; //descricao da tarefa: pode ser qualquer tarefa
+	private Date dataLimite; // data no formato Date
+	private long prazo; // diferença entre a data atual (agora) com a dataLimite
+	private boolean concluido; // True = Tarefa concluido
 	SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 	
 	public Tarefa(String desc, String data) throws Exception {
 		descricao = desc;
-		dataLimite = formato.parse(data);
+		dataLimite = formato.parse(data); //transforma a string data no formato Date
 	}
 	
-	public String isConcluido() {
+	public String isConcluido() { //retorna se a Tarfa está concluida
 		if (concluido == true) {
 			return "Sim";
 		}
@@ -25,7 +25,7 @@ public class Tarefa {
 		}
 		
 	}
-	public void setPrazo() {
+	public void setPrazo() { // calcula a direrença dos dia atual para a data limite
 		GregorianCalendar d= new GregorianCalendar();
 		Date agora = d.getTime();
 		prazo = (dataLimite.getTime() - agora.getTime()) / (1000*60*60*24);
