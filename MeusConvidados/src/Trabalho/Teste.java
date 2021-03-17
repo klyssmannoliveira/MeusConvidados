@@ -26,7 +26,7 @@ public class Teste {
 		g1 = new Bebida("Cervejas", 22.30, 1);
 		g2 = new Comida("Salgados", 100.00, 100);
 		g3 = new Musica("The Beatles", 100.00);
-		System.out.println(t1.toString());
+		//System.out.println(t1.toString());
 
 		e1.adicionarConvidado(a1);
 		e1.adicionarConvidado(a2);
