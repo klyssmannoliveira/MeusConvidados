@@ -3,6 +3,7 @@
    Objetivo: Classe denominada Convidado para as informações dos convidados do evento; 
 */
 
+
 package Trabalho;
 
 public class Convidado {
