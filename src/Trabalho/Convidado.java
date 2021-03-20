@@ -35,21 +35,25 @@ public class Convidado {
 		this.quantAcompanhante = quantAcompanhante;
 	}
 
+	
 	/*
 	 * Objetivo: Getters e Setters referentes aos atributos;
 	 * 
 	 */
 
+	
 	// get do nome;
 	public String getNome() {
 		return nome;
 	}
 
+	
 	// set do nome;
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
+	
 	// get do telefone;
 	public String getTelefone() {
 		return telefone;
