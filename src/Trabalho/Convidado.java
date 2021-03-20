@@ -42,6 +42,7 @@ public class Convidado {
 	 */
 
 	
+	
 	// get do nome;
 	public String getNome() {
 		return nome;
